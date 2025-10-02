@@ -47,7 +47,7 @@
 			if (wet_mop(m, user))
 				return
 		if(!mymop)
-			put_in_cart(m, user)
+			m.janicart_insert(user, src)
 		else
 			to_chat(user, fail_msg)
 	else if(istype(I, /obj/item/pushbroom))

@@ -24,6 +24,11 @@
 	AddComponent(/datum/component/cleaner, mopspeed, pre_clean_callback=CALLBACK(src, PROC_REF(should_clean)), on_cleaned_callback=CALLBACK(src, PROC_REF(apply_reagents)))
 	create_reagents(mopcap)
 
+/obj/item/mop/proc/janicart_insert(mob/user, obj/structure/janitorialcart/J) //sadly the copypasta is the simple way
+	J.put_in_cart(src, user)
+	J.mymop=src
+	J.update_appearance()
+
 /obj/item/mop/proc/clean(turf/A, mob/living/cleaner)
 	var/really = FALSE
 	for(var/obj/effect/decal/cleanable/blood/B in A)
