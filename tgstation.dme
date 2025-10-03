@@ -3781,6 +3781,7 @@
 #include "interface\menu.dm"
 #include "interface\stylesheet.dm"
 #include "interface\skin.dmf"
+#include "modular_tfn\master_files\code\game\objects\items\mop.dm"
 #include "modular_tfn\master_files\code\modules\client\preferences.dm"
 #include "modular_tfn\master_files\code\modules\mob\living\living_defines.dm"
 #include "modular_tfn\master_files\code\modules\mob\living\carbon\human\human_defines.dm"
